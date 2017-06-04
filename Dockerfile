@@ -18,7 +18,7 @@ RUN echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true 
     apt-get install -yqq oracle-java7-set-default && \
     apt-get -yqq install tomcat7 maven && \
     rm -rf /var/lib/apt/lists/* && \
-    rm -rf /var/cache/oracle-jdk8-installer
+    rm -rf /var/cache/oracle-jdk7-installer
 
 RUN ln -s /var/lib/tomcat7/common $CATALINA_HOME/common && \
     ln -s /var/lib/tomcat7/server $CATALINA_HOME/server && \
